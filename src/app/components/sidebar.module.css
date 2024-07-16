@@ -1,0 +1,30 @@
+
+.active{
+    background-color: var(--background-color-success);
+}
+.Link_With_Box{
+    max-width: 202px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+}
+
+.Link_With_Box svg{
+margin-right: .5rem;
+}
+
+.Custom_Link{
+    color: var(--success-color-link);
+    display: block;
+}
+.Link_With_Box:hover{
+    background-color: #00200010;
+}
+.Link_With_Box.active:hover{
+    background-color: var(--background-color-success);
+}
+div > .Link_With_Box{
+    margin-bottom: 1px;
+}

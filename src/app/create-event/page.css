@@ -1,0 +1,254 @@
+.FormField[data-invalid="true"] input,
+.FormField[data-invalid="true"] textarea {
+    border: 1px solid red;
+    outline: none
+}
+
+.section-head {
+    margin-bottom: 4rem;
+}
+
+.FormField {
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.FormField .custom-input-wrapper {
+    position: relative;
+}
+
+.FormField .rt-SelectTriggerInner {
+    color: var(--light-placeholder-color);
+}
+
+.FormLabel {
+    font-size: var(--font-size-custom);
+    font-weight: 500;
+}
+
+.labelContainer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.FormField input,
+.FormField textarea {
+    height: 2.5rem;
+    padding: 8px;
+    background-color: rgba(0, 32, 0, 0.06);
+    color: rgba(5, 15, 0, 0.47);
+    font-size: var(--font-size-custom);
+    width: 100%;
+    border: 1px solid var(--custom-radius-3);
+    border-radius: var(--custom-radius-3);
+    color: var(--light-placeholder-color);
+}
+
+.FormField textarea {
+    min-height: 5rem;
+    padding: 0.75rem;
+}
+
+.FormControlWrapper {
+    position: relative;
+}
+
+.FormControlWrapper.searchForm input {
+    height: 38px;
+    font-size: var(--font-size-custom);
+    border: 1px solid rgba(0, 32, 0, 0.2);
+    border-radius: var(--custom-radius-3);
+    color: var(--light-placeholder-color);
+}
+
+.FormControlWrapper.searchForm svg {
+    color: var(--light-placeholder-color);
+}
+
+.FormControlWrapper input {
+    padding-left: 2rem;
+}
+
+.FormField .custom-input-wrapper input {
+    padding-left: 2.5rem;
+}
+
+.FormControlWrapper svg,
+.FormField .custom-datepicker svg {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.FormField .custom-datepicker svg {
+    left: 1rem;
+}
+
+.form-grid-container {
+    margin-bottom: 3rem;
+}
+
+.form-grid-container .FormField {
+    margin-bottom: 0.5rem;
+}
+
+.trigger-select {
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 32, 0, 0.06);
+    box-shadow: unset;
+    position: relative;
+    /* z-index: 99; */
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+    min-height: 40px;
+}
+
+.react-datepicker-popper {
+    width: 100%;
+}
+
+.react-datepicker {
+    width: 100%;
+}
+
+.react-datepicker__month-container {
+    width: 100%;
+}
+
+.react-datepicker__triangle {
+    display: none;
+}
+
+.FormSubmit {
+    background-color: var(--custom-submit-button-background-color);
+    color: var(--custom-submit-button-color);
+}
+
+.AlertDialogOverlay {
+    background-color: var(--black-a9);
+    position: fixed;
+    inset: 0;
+    animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.AlertDialogContent {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 500px;
+    max-height: 85vh;
+    padding: 25px;
+    animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.AlertDialogContent:focus {
+    outline: none;
+}
+
+.AlertDialogTitle {
+    margin: 0;
+    color: #1D211C;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.AlertDialogDescription {
+    margin-bottom: 20px;
+    color: rgba(var(--gray-12));
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.btn {
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 6px;
+    font-size: var(--font-size-custom);
+    border-radius: var(--custom-radius-3);
+    cursor: pointer;
+}
+
+.btn-link {
+    color: var(--light-hover-text-color);
+    margin-left: .5rem;
+    background-color: transparent;
+}
+
+.btn.mauve {
+    color: var(--light-hover-text-color);
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    color: var(--gray-contrast);
+}
+
+.custom-upload label{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+    height: 10rem;
+    padding: 8px;
+    background-color: rgba(0, 32, 0, 0.06);    
+    font-size: var(--font-size-4);    
+    width: 100%;
+    border: 1px solid var(--custom-radius-3);
+    border-radius: var(--custom-radius-3);
+    color: var(--light-placeholder-color);
+}
+
+ .custom-upload label:hover {
+    background-color: rgba(0, 32, 0, 0.1); 
+}
+
+.custom-upload label:active {
+    background-color: rgba(0, 32, 0, 0.2);
+}
+
+.custom-upload input {
+	border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.custom-upload span{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+@media screen and (min-width:768px) {
+    .FormControlWrapper.searchForm {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .FormControlWrapper.searchForm input {
+        width: 100%;
+    }
+}
