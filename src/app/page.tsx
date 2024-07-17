@@ -224,7 +224,7 @@ export default function Home() {
           <AlertDialog.Content className="AlertDialogContent">
             <AlertDialog.Title className="AlertDialogTitle">Delete Event</AlertDialog.Title>
             <AlertDialog.Description className="AlertDialogDescription">
-              You are about to permanently delete this event. This action can't be undone
+              You are about to permanently delete this event. This action can not be undone
             </AlertDialog.Description>
             <div style={{ display: 'flex', gap: 15, justifyContent: 'flex-end' }}>
               <AlertDialog.Cancel asChild>
